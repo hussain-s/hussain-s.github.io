@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shabbir Hussain | AI Systems, Research, Cloud Engineering</title>
+    <meta
+      name="description"
+      content="Portfolio of Shabbir Hussain: AI systems research, LLM evaluation, retrieval, cloud-native AIOps, multi-agent systems, and technical writing."
+    />
+    <meta property="og:title" content="Shabbir Hussain | AI Systems Portfolio" />
+    <meta
+      property="og:description"
+      content="A cutting-edge portfolio across AI systems, LLM benchmarks, RAG evaluation, cloud-native RCA, and practical AI writing."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Shabbir Hussain home">
+        <span class="brand-mark">SH</span>
+        <span>Shabbir Hussain</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#systems">Systems</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI systems researcher · cloud engineer · builder</p>
+          <h1>Building reliable intelligence across models, retrieval, agents, and infrastructure.</h1>
+          <p class="hero-text">
+            I work across the stack: LLM evaluation, RAG measurement, cloud-native AIOps,
+            distributed root-cause analysis, agentic systems, and practical AI education.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore Work</a>
+            <a class="button ghost" href="mailto:72.shabbir@gmail.com">Start a Conversation</a>
+          </div>
+        </div>
+
+        <aside class="command-center" aria-label="Portfolio highlights">
+          <div class="panel-topline">
+            <span>portfolio.signal</span>
+            <span class="live-dot">live</span>
+          </div>
+          <div class="signal-grid">
+            <div>
+              <strong>720K+</strong>
+              <span>LLM evaluation episodes designed</span>
+            </div>
+            <div>
+              <strong>40.9M</strong>
+              <span>Wikipedia passages prepared for retrieval studies</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>microservices instrumented for RCA experiments</span>
+            </div>
+            <div>
+              <strong>14</strong>
+              <span>chapters in practical AI systems book work</span>
+            </div>
+          </div>
+          <div class="telemetry-card">
+            <span class="mono">focus.vector</span>
+            <div class="vector-bars" aria-hidden="true">
+              <i style="--h: 86%"></i>
+              <i style="--h: 58%"></i>
+              <i style="--h: 76%"></i>
+              <i style="--h: 44%"></i>
+              <i style="--h: 91%"></i>
+              <i style="--h: 69%"></i>
+              <i style="--h: 81%"></i>
+              <i style="--h: 52%"></i>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="ticker" aria-label="Areas of work">
+        <span>LLM Robustness</span>
+        <span>RAG Evaluation</span>
+        <span>Cloud-Native AIOps</span>
+        <span>Distributed Systems</span>
+        <span>Multi-Agent Systems</span>
+        <span>Technical Writing</span>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected portfolio</p>
+          <h2>Work that connects research questions to working systems.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card feature">
+            <div class="card-meta">
+              <span>Benchmarking</span>
+              <span>NeurIPS-style evaluation</span>
+            </div>
+            <h3>LatencyBench</h3>
+            <p>
+              A two-phase benchmark for measuring how delayed information changes LLM behavior:
+              premature commitment, waiting, recovery, and decision stability.
+            </p>
+            <ul>
+              <li>427,180 evaluated episodes in the v2 run</li>
+              <li>4 frontier models, 4 datasets, 8 delay levels</li>
+              <li>Designed PCR, wait-rate, recovery, and stability metrics</li>
+            </ul>
+            <a href="https://github.com/Haricharanpanjwani/llm_eval_robustness_latencybench">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div class="card-meta">
+              <span>Retrieval</span>
+              <span>EMNLP-style study</span>
+            </div>
+            <h3>Retrieval Value Maps</h3>
+            <p>
+              A measurement framework for identifying when RAG helps, hurts, or wastes compute
+              on public-knowledge QA tasks.
+            </p>
+            <ul>
+              <li>Measured no-op retrieval across multiple evaluation methods</li>
+              <li>Built BM25, dense, rerank, and oracle retrieval paths</li>
+              <li>Added hedging and nuanced failure taxonomy analysis</li>
+            </ul>
+            <a href="https://github.com/hussain-s/rag-value-map">View repository</a>
+          </article>
+
+          <article class="project-card">
+            <div class="card-meta">
+              <span>AIOps</span>
+              <span>DSN industry track</span>
+            </div>
+            <h3>Swarm RCA for Cloud-Native Systems</h3>
+            <p>
+              A decentralized and centralized root-cause analysis system for microservices using
+              anomaly detection, service graphs, gossip, and Personalized PageRank.
+            </p>
+            <ul>
+              <li>Kubernetes sidecars exchange rank vectors over gRPC</li>
+              <li>CloudWatch Container Insights and AWS X-Ray telemetry</li>
+              <li>Centralized baseline for fair experimental comparison</li>
+            </ul>
+            <a href="https://github.com/Haricharanpanjwani/ai_ops_swarm_intelligence">View repository</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="research" class="section research-band">
+        <div class="section-heading">
+          <p class="eyebrow">Research artifacts</p>
+          <h2>Evidence, plots, and experimental texture.</h2>
+        </div>
+        <div class="artifact-grid">
+          <figure>
+            <img src="assets/model-comparison.png" alt="Model comparison plot from LatencyBench" />
+            <figcaption>Model-level robustness comparison across delay conditions.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/latency-sensitivity-curves.png" alt="Latency sensitivity curves plot" />
+            <figcaption>Delay sensitivity curves showing how behavior shifts over time.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/dataset-delay-heatmap.png" alt="Dataset by delay heatmap" />
+            <figcaption>Dataset-level delay interactions across benchmark tasks.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/wait-vs-pcr.png" alt="Wait rate versus premature commitment plot" />
+            <figcaption>Wait behavior versus premature commitment patterns.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="systems" class="section split-section">
+        <div>
+          <p class="eyebrow">Systems range</p>
+          <h2>From research scaffolds to production-shaped architecture.</h2>
+          <p>
+            My projects share a common pattern: define the measurement problem, build the
+            experimental system, run it at meaningful scale, and document the tradeoffs clearly.
+          </p>
+        </div>
+        <div class="capability-stack">
+          <article>
+            <span class="mono">01</span>
+            <h3>Evaluation Design</h3>
+            <p>LLM benchmarks, factorial controls, delay injection, scoring, and reproducibility.</p>
+          </article>
+          <article>
+            <span class="mono">02</span>
+            <h3>Retrieval Systems</h3>
+            <p>BM25, dense embeddings, HNSW indexing, reranking, oracle retrieval, and RAG analysis.</p>
+          </article>
+          <article>
+            <span class="mono">03</span>
+            <h3>Cloud Infrastructure</h3>
+            <p>Kubernetes jobs, sidecars, AWS telemetry, S3 checkpointing, and distributed workers.</p>
+          </article>
+          <article>
+            <span class="mono">04</span>
+            <h3>AI Systems Writing</h3>
+            <p>Contributing to a practical Apress guide on LLM, agent, memory, and multi-agent systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="section-heading">
+          <p class="eyebrow">Trajectory</p>
+          <h2>Different fields, one operating style.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Research</span>
+            <h3>LLM behavior under delayed information</h3>
+            <p>Designed LatencyBench to test whether models wait, commit, recover, or destabilize.</p>
+          </article>
+          <article>
+            <span>Retrieval</span>
+            <h3>When RAG actually changes outcomes</h3>
+            <p>Built a value-map framework to separate helpful retrieval from harmful or wasted retrieval.</p>
+          </article>
+          <article>
+            <span>AIOps</span>
+            <h3>Decentralized RCA in microservice fleets</h3>
+            <p>Implemented distributed PPR and gossiping sidecar agents for cloud-native observability.</p>
+          </article>
+          <article>
+            <span>Education</span>
+            <h3>Practical guide to AI systems</h3>
+            <p>Worked on structured material for building LLM and agent applications end to end.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">Shareable profile</p>
+          <h2>For research collaborators, engineering teams, and AI builders.</h2>
+          <p>
+            I’m interested in rigorous AI systems work: evaluation, reliability, retrieval,
+            agents, and infrastructure that makes models behave better in real workflows.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:72.shabbir@gmail.com">Email Me</a>
+          <a class="button ghost" href="https://github.com/hussain-s">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Shabbir Hussain</span>
+      <span>Built for GitHub Pages</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
