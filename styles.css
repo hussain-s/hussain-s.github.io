@@ -166,10 +166,31 @@ h3 {
 
 .lede {
   max-width: 700px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #383631;
   font-size: clamp(16px, 1.45vw, 20px);
   line-height: 1.62;
+}
+
+.profile-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 760px;
+}
+
+.profile-badges span,
+.skill-pills span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 252, 246, 0.72);
+  color: #34312c;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 10px;
 }
 
 .intro-card {
@@ -254,6 +275,75 @@ h3 {
   color: var(--accent);
 }
 
+.experience-section {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 252, 246, 0.34);
+}
+
+.experience-grid,
+.skills-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+
+.experience-lead {
+  position: sticky;
+  top: 88px;
+}
+
+.experience-lead span,
+.role-line span {
+  color: var(--accent-2);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.experience-lead p,
+.skills-layout p {
+  color: #4f4b44;
+  font-size: 15px;
+  line-height: 1.68;
+}
+
+.experience-list {
+  display: grid;
+  gap: 14px;
+}
+
+.experience-list article,
+.skill-groups article {
+  border: 1px solid var(--line-strong);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.role-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.role-line h3 {
+  margin-bottom: 0;
+}
+
+.experience-list ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: #34312c;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .work-list {
   border-top: 1px solid var(--ink);
 }
@@ -303,6 +393,27 @@ h3 {
   color: #34312c;
   font-size: 14px;
   line-height: 1.55;
+}
+
+.skills-section {
+  border-block: 1px solid var(--line);
+  background: rgba(20, 20, 20, 0.035);
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skill-groups h3 {
+  margin-bottom: 12px;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .research-section {
@@ -440,10 +551,16 @@ footer {
 
 @media (max-width: 1080px) {
   .hero-grid,
+  .experience-grid,
+  .skills-layout,
   .research-head,
   .notes-grid,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .experience-lead {
+    position: static;
   }
 
   .proof-strip,
@@ -469,7 +586,8 @@ footer {
   }
 
   .proof-strip,
-  .artifact-grid {
+  .artifact-grid,
+  .skill-groups {
     grid-template-columns: 1fr;
   }
 
@@ -485,6 +603,12 @@ footer {
   .work-meta {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .role-line {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .contact-actions,
